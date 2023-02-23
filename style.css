@@ -1,0 +1,315 @@
+:root {
+  --dark-blue: #033B4E;
+  --red-main: #F87B08;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("./fonts/Raleway-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway Black';
+  src: url("./fonts/Raleway-Black.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway SemiBold';
+  src: url("./fonts/Raleway-SemiBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway ExtraBold';
+  src: url("./fonts/Raleway-ExtraBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background-color: #CAEBFE;
+  padding: 0 15px;
+  font-family: 'Raleway';
+  line-height: 20px;
+  font-size: 16px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: 134px 456px, right 144px top 773px;
+  background-image: url(./assets/back1.png), url(./assets/back2.png);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+p, h1, h2, h3, h4 {
+  margin: 0;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+header {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--dark-blue);
+  padding: 12px 0;
+}
+
+footer {
+  display: flex;
+  border-top: 1px solid var(--dark-blue);
+}
+
+header h2 {
+  color: var(--dark-blue);
+  text-transform: uppercase;
+  font-family: 'Raleway Black';
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+}
+
+#insta-btn {
+  width: 32px;
+  height: 32px;
+  display: block;
+  color: var(--dark-blue);
+  text-decoration: none !important;
+  transition: color .25s;
+  margin-left: 80px;
+}
+
+#insta-btn:hover {
+  color: var(--red-main);
+  cursor: pointer;
+}
+
+#insta-link {
+  font-family: 'Raleway Black';
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  margin: 16px auto 48px;
+  color: var(--dark-blue);
+}
+
+.main {
+  color: var(--dark-blue);
+  margin-bottom: 24px;
+}
+
+.main h1 {
+  font-family: 'Raleway Black';
+  font-size: 32px;
+  line-height: 36px;
+  margin: 24px 0 8px;
+}
+
+.card {
+  margin-bottom: 24px;
+  padding: 12px 12px 16px;
+  background: white;
+  box-shadow: 0px 6.125px 9.1875px -1.8375px rgba(0, 0, 0, 0.1), 0px 2.45px 3.675px -1.225px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+}
+
+.card h3 {
+  font-family: 'Raleway Black';
+  border-radius: 8px;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--dark-blue);
+  margin: 16px 0;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-image {
+  border-radius: 8px;
+  height: 257px;
+}
+
+.price {
+  font-family: 'Raleway SemiBold';
+  color: var(--dark-blue);
+  margin-right: auto;
+}
+
+.button {
+  font-family: 'Raleway ExtraBold';
+  height: 40px;
+  padding: 8px 12px;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  box-shadow: 0px 6.125px 9.1875px -1.8375px rgba(0, 0, 0, 0.1), 0px 2.45px 3.675px -1.225px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.see-more {
+  background: var(--red-main);
+  color: white;
+  margin-left: 8px;
+}
+
+.see-more svg {
+  margin-left: 10px;
+}
+
+.buy-now {
+  border: 2px solid var(--dark-blue);
+  color: var(--dark-blue);
+}
+
+.soon {
+  background-color: #A9A9A9;
+  color: white;
+}
+
+#thai-map-guide {
+  background: no-repeat center/cover url(./assets/ThaiMapGuide.png);
+}
+
+#bangkok-guide {
+  background: no-repeat center/cover url(./assets/BangkokGuide.png);
+}
+
+#north-guide {
+  background: no-repeat center/cover url(./assets/NorthThai.png);
+}
+
+.desktop {
+  display: none;
+}
+
+@media (min-width: 345px) {
+  body {
+    background-position: 154px 456px, right 164px top 773px;
+  }
+
+  .desktop {
+    display: unset;
+  }
+}
+
+@media (min-width: 400px) {
+  body {
+    background-position: 200px 456px, right 215px top 773px;
+  }
+}
+
+@media (min-width: 500px) {
+  body {
+    padding: 0 21px;
+    background-image: url(./assets/back2.png), url(./assets/back1.png);
+    background-position: 243px 692px, right 360px top 409px;
+  }
+
+  .main h1 {
+    margin-top: 30px;
+  }
+
+  .card-image {
+    height: 275px;
+  }
+}
+
+@media (min-width: 560px) {
+  body {
+    padding: 0 30px;
+    background-image: url(./assets/back2.png), url(./assets/back1.png);
+    background-position: 323px 692px, right 420px top 409px;
+  }
+
+  .main {
+    margin-bottom: 50px;
+  }
+
+  .card {
+    padding: 15px 15px 10px;
+  }
+
+  .card-image {
+    height: 320px;
+  }
+}
+
+@media (min-width: 650px) {
+  body {
+    padding: 0 20px;
+    background-repeat: no-repeat;
+    background-position: right 164px bottom 0;
+    background-image: url(./assets/back2.png);
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -26px;
+  }
+
+  .card {
+    min-width: 289px;
+    max-width: 324px;
+    width: calc(50% - 33px);
+    margin-right: 26px;
+  }
+
+  .card-image {
+    height: 257px;
+  }
+
+
+  #insta-link {
+    margin: 24px 0 27px auto;
+
+  }
+}
+
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: unset;
+  }
+
+  header h2 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 36px 0 54px;
+  }
+
+  .main h1 {
+    font-size: 70px;
+    line-height: 79px;
+    margin-right: 29px;
+    flex-shrink: 0;
+    margin: 0 29px 0 0;
+  }
+}
