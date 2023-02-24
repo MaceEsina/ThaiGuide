@@ -1,6 +1,9 @@
 :root {
+  --main-blue: #327EA9;
   --dark-blue: #033B4E;
+  --light-blue: #CAEBFE;
   --red-main: #F87B08;
+  --dark-grey: #383838;
 }
 
 @font-face {
@@ -13,6 +16,13 @@
 @font-face {
   font-family: 'Raleway Black';
   src: url("./fonts/Raleway-Black.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway Bold';
+  src: url("./fonts/Raleway-Bold.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -159,6 +169,7 @@ header h2 {
   border-radius: 12px;
   display: flex;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 

@@ -1,0 +1,88 @@
+body {
+  background-color: white;
+  background-image: none;
+}
+
+.images {
+  margin: 28px 0 22px;
+}
+
+#image1 {
+  border-radius: 16px;
+  height: 211px;
+  margin-bottom: 16px;
+  background: no-repeat center/cover url(./assets/ThaiMapGuide.png);
+}
+
+#image-row {
+  display: flex;
+  justify-content: space-between;
+  margin-right: -14px;
+}
+
+#image-row > div {
+  border-radius: 8px;
+  height: 64px;
+  margin-right: 14px;
+  width: calc(33.33% - 14px);
+}
+
+#image2 {
+  background: no-repeat center/cover url(./assets/ThaiMapGuide.png);
+}
+
+#image3 {
+  background: no-repeat center/cover url(./assets/ThaiGuide3.png);
+}
+
+#image4 {
+  background: no-repeat center/cover url(./assets/ThaiGuide4.png);
+}
+
+h1 {
+  font-family: 'Raleway Black';
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  color: var(--dark-grey);
+}
+
+.price {
+  font-family: 'Raleway Bold';
+  color: var(--dark-grey);
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 4px;
+}
+
+.buy-btn {
+  margin: 16px 0 24px;
+  background: var(--red-main);
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+main > p {
+  color: var(--dark-blue);
+}
+
+#tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 24px -8px 24px 0;
+}
+
+.tag {
+  margin: 0 8px 8px 0;
+  background: var(--light-blue);
+  color: var(--main-blue);
+  font-size: 12px;
+  line-height: 16px;
+  font-family: 'Raleway Bold';
+  display: flex;
+  align-items: center;
+  padding: 3px 6px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
