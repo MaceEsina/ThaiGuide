@@ -11,20 +11,41 @@ body {
   border-radius: 16px;
   height: 211px;
   margin-bottom: 16px;
+  transition: background-image .25s ease;
+}
+
+.image1 {
   background: no-repeat center/cover url(./assets/ThaiMapGuide.png);
+}
+
+.image2 {
+  background: no-repeat center/cover url(./assets/ThaiGuide2.png);
+}
+
+.image3 {
+  background: no-repeat center/cover url(./assets/ThaiGuide3.png);
 }
 
 #image-row {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin-right: -14px;
 }
 
 #image-row > div {
+  cursor: pointer;
   border-radius: 8px;
   height: 64px;
   margin-right: 14px;
   width: calc(33.33% - 14px);
+  transition: outline .1s;
+  box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+#image-row > div.active {
+  box-shadow: none;
+  outline: 4px solid var(--red-main);
 }
 
 #image2 {
@@ -32,11 +53,11 @@ body {
 }
 
 #image3 {
-  background: no-repeat center/cover url(./assets/ThaiGuide3.png);
+  background: no-repeat center/cover url(./assets/ThaiGuide2.png);
 }
 
 #image4 {
-  background: no-repeat center/cover url(./assets/ThaiGuide4.png);
+  background: no-repeat center/cover url(./assets/ThaiGuide3.png);
 }
 
 h1 {
@@ -85,4 +106,54 @@ main > p {
   padding: 3px 6px;
   border-radius: 6px;
   text-transform: uppercase;
+}
+
+@media (min-width: 355px) {
+  #image1 {
+    height: 240px;
+  }
+  #image-row > div {
+    height: 80px;
+  }
+}
+
+@media (min-width: 400px) {
+  #image1 {
+    height: 270px;
+  }
+  #image-row > div {
+    height: 90px;
+  }
+}
+
+@media (min-width: 450px) {
+  #image1 {
+    height: 300px;
+  }
+  #image-row > div {
+    height: 100px;
+  }
+}
+
+@media (min-width: 500px) {
+  body {
+    padding: 0 23px;
+  }
+
+  #image1 {
+    float: left;
+    width: 340px;
+    margin: 0 15px 0 0;
+  }
+
+  #image-row {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+
+  #image-row > div {
+    width: 100%;
+    margin: 0 0 15px;
+  }
 }
