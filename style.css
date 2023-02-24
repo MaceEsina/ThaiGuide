@@ -159,6 +159,7 @@ header h2 {
   border-radius: 12px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .see-more {
