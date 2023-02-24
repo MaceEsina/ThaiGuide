@@ -38,6 +38,7 @@ body {
   font-family: 'Raleway';
   line-height: 20px;
   font-size: 16px;
+  height: 100vh;
   background-repeat: no-repeat, no-repeat;
   background-position: 134px 456px, right 144px top 773px;
   background-image: url(./assets/back1.png), url(./assets/back2.png);
@@ -61,7 +62,7 @@ header {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid var(--dark-blue);
-  padding: 12px 0;
+  padding: 12px 0 11px;
 }
 
 footer {
@@ -97,7 +98,7 @@ header h2 {
   font-family: 'Raleway Black';
   text-decoration-line: underline;
   text-transform: uppercase;
-  margin: 16px auto 48px;
+  margin: 16px auto 37px;
   color: var(--dark-blue);
 }
 
@@ -110,7 +111,7 @@ header h2 {
   font-family: 'Raleway Black';
   font-size: 32px;
   line-height: 36px;
-  margin: 24px 0 8px;
+  margin: 24px 0 10px;
 }
 
 .card {
@@ -170,7 +171,7 @@ header h2 {
   margin-left: 10px;
 }
 
-.buy-now {
+.buy {
   border: 2px solid var(--dark-blue);
   color: var(--dark-blue);
 }
@@ -192,7 +193,7 @@ header h2 {
   background: no-repeat center/cover url(./assets/NorthThai.png);
 }
 
-.desktop {
+.buy-now {
   display: none;
 }
 
@@ -201,7 +202,7 @@ header h2 {
     background-position: 154px 456px, right 164px top 773px;
   }
 
-  .desktop {
+  .buy-now {
     display: unset;
   }
 }
@@ -223,6 +224,10 @@ header h2 {
     margin-top: 30px;
   }
 
+  .card {
+    margin-bottom: 30px;
+  }
+
   .card-image {
     height: 275px;
   }
@@ -233,10 +238,6 @@ header h2 {
     padding: 0 30px;
     background-image: url(./assets/back2.png), url(./assets/back1.png);
     background-position: 323px 692px, right 420px top 409px;
-  }
-
-  .main {
-    margin-bottom: 50px;
   }
 
   .card {
@@ -252,11 +253,11 @@ header h2 {
   body {
     padding: 0 20px;
     background-repeat: no-repeat;
-    background-position: right 164px bottom 0;
+    background-position: left bottom;
     background-image: url(./assets/back2.png);
   }
 
-  .desktop {
+  .buy-now {
     display: none;
   }
 
@@ -268,8 +269,8 @@ header h2 {
 
   .card {
     min-width: 289px;
-    max-width: 324px;
-    width: calc(50% - 33px);
+    max-width: 350px;
+    width: calc(50% - 26px);
     margin-right: 26px;
   }
 
@@ -285,12 +286,20 @@ header h2 {
 }
 
 @media (min-width: 768px) {
+  body {
+    padding: 0 47px;
+  }
+
   .mobile {
     display: none;
   }
 
-  .desktop {
+  .buy-now {
     display: unset;
+  }
+
+  header {
+    padding: 28px 0 27px;
   }
 
   header h2 {
@@ -300,9 +309,9 @@ header h2 {
 
   .main {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    margin: 36px 0 54px;
+    margin: 37px 0 38px;
   }
 
   .main h1 {
@@ -311,5 +320,58 @@ header h2 {
     margin-right: 29px;
     flex-shrink: 0;
     margin: 0 29px 0 0;
+  }
+
+  .main p {
+    max-width: 350px;
+  }
+
+  .cards {
+    margin-right: -30px;
+  }
+
+  .card {
+    margin-right: 30px;
+    min-width: 320px;
+    max-width: 449px;
+    width: calc(50% - 30px);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url(./assets/back2.png), url(./assets/back1.png);
+    background-position: -208px bottom, right -207px top 137px;
+  }
+
+  .buy-now {
+    display: none;
+  }
+
+  .card {
+    min-width: 285px;
+    max-width: 428px;
+    margin-bottom: 66px;
+    width: calc(33.33% - 30px)
+  }
+}
+
+@media (min-width: 1124px) {
+  .buy-now {
+    display: unset;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    padding: 0 165px;
+    background-position: left bottom, right top 137px;
+  }
+
+  .card {
+    min-width: 345px;
+    max-width: 500px;
+    margin-bottom: 66px;
+    width: calc(33.33% - 30px)
   }
 }
