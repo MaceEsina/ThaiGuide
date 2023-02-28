@@ -1,0 +1,144 @@
+:root {
+  --main-blue: #327EA9;
+  --dark-blue: #033B4E;
+  --light-blue: #CAEBFE;
+  --red-main: #F87B08;
+  --dark-grey: #383838;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url("./fonts/Raleway-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway Black';
+  src: url("./fonts/Raleway-Black.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway Bold';
+  src: url("./fonts/Raleway-Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway SemiBold';
+  src: url("./fonts/Raleway-SemiBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Raleway ExtraBold';
+  src: url("./fonts/Raleway-ExtraBold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0 15px;
+  font-family: 'Raleway';
+  line-height: 20px;
+  font-size: 16px;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+p, h1, h2, h3, h4 {
+  margin: 0;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+header {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--dark-blue);
+  padding: 12px 0 11px;
+}
+
+footer {
+  display: flex;
+  margin-top: auto;
+  border-top: 1px solid var(--dark-blue);
+}
+
+header h2 {
+  color: var(--dark-blue);
+  text-transform: uppercase;
+  font-family: 'Raleway Black';
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+}
+
+#insta-btn {
+  width: 32px;
+  height: 32px;
+  display: block;
+  color: var(--dark-blue);
+  text-decoration: none !important;
+  transition: color .25s;
+  margin-left: 80px;
+}
+
+#insta-btn:hover {
+  color: var(--red-main);
+  cursor: pointer;
+}
+
+#insta-link {
+  font-family: 'Raleway Black';
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  margin: 16px auto 37px;
+  color: var(--dark-blue);
+}
+
+.button {
+  font-family: 'Raleway ExtraBold';
+  height: 40px;
+  padding: 8px 12px;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  box-shadow: 0px 6.125px 9.1875px -1.8375px rgba(0, 0, 0, 0.1), 0px 2.45px 3.675px -1.225px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+
+  header {
+    padding: 28px 0 27px;
+  }
+
+  header h2 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  #insta-link {
+    margin: 24px 0 27px auto;
+  }
+}
