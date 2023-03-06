@@ -112,7 +112,7 @@ header h2 {
 .button {
   font-family: 'Raleway ExtraBold';
   height: 40px;
-  padding: 8px 12px;
+  padding: 9px 12px 7px;
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
