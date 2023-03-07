@@ -71,6 +71,7 @@ body {
 .soon {
   background-color: #A9A9A9;
   color: white;
+  box-shadow: none;
 }
 
 #thai-map-guide {
