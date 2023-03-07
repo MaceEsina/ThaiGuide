@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
   })
 
   document.getElementById('thai-guide-buy').onclick = function() {
-    const url = 'https://buy.stripe.com/3cs8zkfY3ekDefS3cc'
+    const url = 'https://buy.stripe.com/test_eVa5mV9wY6uL5447ss'
     // const url = 'https://buy.stripe.com/28o3f04fla4n5Jm3cd'
     window.open(url, '_self')
     return false
