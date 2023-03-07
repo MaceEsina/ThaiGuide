@@ -180,10 +180,6 @@ body {
     padding: 0 47px;
   }
 
-  .buy-now {
-    display: unset;
-  }
-
   .main {
     display: flex;
     justify-content: flex-start;
@@ -215,6 +211,12 @@ body {
   }
 }
 
+@media (min-width: 840px) {
+  .buy-now {
+    display: unset;
+  }
+}
+
 @media (min-width: 1024px) {
   body {
     background-image: url(./assets/back2.png), url(./assets/back1.png);
@@ -235,7 +237,7 @@ body {
   }
 }
 
-@media (min-width: 1124px) {
+@media (min-width: 1170px) {
   .buy-now {
     display: unset;
   }
