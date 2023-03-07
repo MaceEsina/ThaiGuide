@@ -66,6 +66,13 @@ body {
 .buy {
   border: 2px solid var(--dark-blue);
   color: var(--dark-blue);
+  transition: all .25s;
+}
+
+.buy:hover,
+.buy:active {
+  background: var(--dark-blue);
+  color: white;
 }
 
 .soon {
