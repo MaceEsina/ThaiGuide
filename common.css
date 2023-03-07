@@ -94,11 +94,12 @@ header h2 {
   text-decoration: none !important;
   transition: color .25s;
   margin-left: 80px;
+  cursor: pointer;
 }
 
-#insta-btn:hover {
+#insta-btn:hover,
+#insta-link:hover {
   color: var(--red-main);
-  cursor: pointer;
 }
 
 #insta-link {
@@ -107,6 +108,7 @@ header h2 {
   text-transform: uppercase;
   margin: 16px auto 37px;
   color: var(--dark-blue);
+  transition: color .25s;
 }
 
 .button {
