@@ -232,7 +232,7 @@ body {
   .card {
     min-width: 285px;
     max-width: 428px;
-    margin-bottom: 66px;
+    margin-bottom: 60px;
     width: calc(33.33% - 30px)
   }
 }
@@ -252,7 +252,6 @@ body {
   .card {
     min-width: 345px;
     max-width: 500px;
-    margin-bottom: 66px;
     width: calc(33.33% - 30px)
   }
 }
