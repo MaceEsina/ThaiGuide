@@ -46,11 +46,25 @@ body {
 }
 
 .price {
-  font-family: 'Raleway Bold';
+  font-family: 'Raleway';
   color: var(--dark-blue);
   margin-right: auto;
+  font-size: 12px;
+  line-height: 20px;
+  text-decoration: line-through;
+  position: relative;
+}
+
+.price:after {
+  font-family: 'Raleway Bold';
+  content: '4.99 $';
+  color: var(--red-main);
+  position: absolute;
+  top: -20px;
+  left: 0;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 20px;
+  white-space: nowrap;
 }
 
 .see-more {
@@ -83,6 +97,11 @@ body {
 
 #thai-map-guide {
   background: no-repeat center/cover url(./assets/ThaiMapGuide.png);
+  cursor: pointer;
+}
+
+#thai-map-guide + h3 {
+  cursor: pointer;
 }
 
 #bangkok-guide {
@@ -101,15 +120,15 @@ body {
   body {
     background-position: 154px 456px, right 164px top 773px;
   }
-
-  .buy-now {
-    display: unset;
-  }
 }
 
 @media (min-width: 400px) {
   body {
     background-position: 200px 456px, right 215px top 773px;
+  }
+
+  .buy-now {
+    display: unset;
   }
 }
 
