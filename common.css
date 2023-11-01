@@ -63,6 +63,7 @@ p, h1, h2, h3, h4 {
 }
 
 header {
+  z-index: 1;
   background-color: transparent;
   display: flex;
   align-items: center;
