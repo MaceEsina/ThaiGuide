@@ -8,7 +8,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   height: 100%;
   color: var(--dark-blue);
   margin-top: -5vh;
@@ -26,11 +26,33 @@ main p {
   max-width: 441px;
 }
 
+.buttons {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 24px 0;
+  height: calc(50% - 61px);
+}
+
+.download-btn {
+  border: 2px solid var(--red-main);
+  color: var(--red-main);
+  transition: all .25s;
+  color: white;
+  background: var(--red-main);
+}
+
 .back-btn {
   border: 2px solid var(--dark-blue);
   color: var(--dark-blue);
   transition: all .25s;
-  margin-top: 32px;
+}
+
+.download-btn:hover,
+.download-btn:active {
+  background: transparent;
+  color: var(--red-main);
 }
 
 .back-btn:hover,
@@ -39,18 +61,25 @@ main p {
   color: white;
 }
 
+@media (min-width: 470px) {
+  main {
+    justify-content: center;
+  }
+
+  .buttons {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 32px;
+    height: auto;
+  }
+
+  .download-btn {
+    margin-right: 24px;
+  }
+}
+
 @media (min-width: 768px) {
-  body {
-    padding: 0 47px;
-  }
-
-  main h2 {
-    font-size: 48px;
-    line-height: 54px;
-    margin-bottom: 16px;
-  }
-
-  .back-btn {
+  .buttons {
     margin-top: 44px;
   }
 }

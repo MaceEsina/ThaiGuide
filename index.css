@@ -46,10 +46,18 @@ body {
 }
 
 .price {
-  font-family: 'Raleway';
+  font-family: 'Raleway Bold';
   color: var(--dark-blue);
   margin-right: auto;
-  font-size: 12px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.sale {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 14px;
   line-height: 20px;
   margin-top: 20px;
   text-decoration: line-through;
@@ -58,7 +66,6 @@ body {
 
 .price:after {
   font-family: 'Raleway Bold';
-  content: '4.99 $';
   color: var(--red-main);
   position: absolute;
   top: -20px;
@@ -66,6 +73,14 @@ body {
   font-size: 20px;
   line-height: 20px;
   white-space: nowrap;
+}
+
+.thai-price:after {
+  content: '4.99 $';
+}
+
+.bangkok-price:after {
+  content: '9.99 $';
 }
 
 .see-more {
