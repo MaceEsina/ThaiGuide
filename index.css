@@ -286,7 +286,7 @@ body {
 @media (min-width: 1440px) {
   body {
     padding: 0 165px;
-    background-position: left bottom, right top 137px;
+    background-position: -69px bottom, right top 137px;
   }
 
   .card {
