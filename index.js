@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   if (bangkokBuy) {
     bangkokBuy.onclick = function() {
-      // TODO change url 
+      // TODO change url
       const url = 'https://buy.stripe.com/7sI00U48k9FF5XyaEG'
       window.open(url, '_self')
       return false
