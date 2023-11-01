@@ -22,10 +22,6 @@
   background: no-repeat center/cover url(./assets/BangkokGuide3.png);
 }
 
-#tags {
-  max-width: 300px;
-}
-
 @media (min-width: 355px) {
   #image1 {
     height: 240px;
@@ -156,6 +152,10 @@
     align-items: flex-start;
     padding-top: 42px;
     margin-bottom: auto;
+  }
+
+  #tags {
+    max-width: 300px;
   }
 
   #info {

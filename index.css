@@ -122,6 +122,11 @@ body {
 
 #bangkok-guide {
   background: no-repeat center/cover url(./assets/BangkokGuide.png);
+  cursor: pointer;
+}
+
+#bangkok-guide + h3 {
+  cursor: pointer;
 }
 
 #north-guide {

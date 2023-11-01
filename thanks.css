@@ -66,6 +66,10 @@ main p {
     justify-content: center;
   }
 
+  main h2 {
+    margin-bottom: 16px;
+  }
+
   .buttons {
     flex-direction: row;
     justify-content: center;
