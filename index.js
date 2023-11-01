@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   if (bangkokBuy) {
     bangkokBuy.onclick = function() {
-      const url = 'https://buy.stripe.com/6oE5le48k0555XycMP'
+      const url = 'https://buy.stripe.com/7sI4ha48keZZeu45ko'
       window.open(url, '_self')
       return false
     };
