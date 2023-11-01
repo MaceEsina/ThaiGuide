@@ -66,14 +66,9 @@ main p {
     justify-content: center;
   }
 
-  main h2 {
-    margin-bottom: 16px;
-  }
-
   .buttons {
     flex-direction: row;
     justify-content: center;
-    margin-top: 32px;
     height: auto;
   }
 
@@ -83,6 +78,12 @@ main p {
 }
 
 @media (min-width: 768px) {
+  main h2 {
+    font-size: 48px;
+    line-height: 54px;
+    margin-bottom: 16px;
+  }
+
   .buttons {
     margin-top: 44px;
   }
